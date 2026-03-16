@@ -37,243 +37,256 @@
 </head>
 <body>
 
-  <div class="announce-bar" id="announceBar">
-    <span>Now accepting new clients &mdash; online sessions available UK-wide</span>
-    <button class="announce-close" id="announceClose" aria-label="Dismiss announcement">&#x2715;</button>
-  </div>
-
+  <!-- SPLIT HEADER: identity left, credentials + CTA right -->
   <header class="header" id="header">
-    <a href="#" class="logo" aria-label="Phoebe Gorry Psychotherapy">
-      <span class="logo-first">Phoebe</span>
-      <span class="logo-last">Gorry</span>
-    </a>
-    <a href="#contact" class="btn btn-header">Book free consultation</a>
+    <div class="header-identity">
+      <a href="#" class="logo" aria-label="Phoebe Gorry Psychotherapy">Phoebe Gorry</a>
+      <span class="header-role" aria-hidden="true">Psychotherapist</span>
+    </div>
+    <div class="header-actions">
+      <span class="header-cred">MBACP Registered</span>
+      <a href="#contact" class="btn btn-primary">Book free consultation</a>
+    </div>
   </header>
 
   <main>
 
-    <!-- HERO: Split — plum text panel left, portrait right -->
+    <!-- HERO: colour-wash, typographic only, no image -->
     <section class="hero" aria-label="Introduction">
-      <div class="hero-text">
-        <p class="eyebrow">Psychotherapy in Surbiton KT6 &amp; London</p>
-        <h1>Your body remembers what your mind is still<em> working out</em></h1>
-        <p class="hero-sub">Integrative, trauma-informed therapy for people ready to go a little deeper. In person in Surbiton and London, or online across the UK.</p>
-        <div class="hero-ctas">
-          <a href="#contact" class="btn btn-ghost">Book free 30-min consultation</a>
-        </div>
-        <div class="hero-badge-row">
-          <span class="hero-badge">MBACP Registered</span>
-          <span class="hero-badge">Trauma-informed</span>
-          <span class="hero-badge">GSRD-affirmative</span>
-        </div>
+      <div class="hero-inner">
+        <p class="hero-location">Surbiton KT6 &amp; London &middot; In person &amp; online</p>
+        <h1>Your body knows things<br>your mind is still<br><em>learning to say</em></h1>
+        <p class="hero-sub">Integrative, somatic and GSRD-affirmative psychotherapy for people ready to work at depth. Sessions from £70.</p>
+        <a href="#contact" class="btn btn-hero">Book your free 30-minute consultation</a>
       </div>
-      <div class="hero-visual">
-        <img
-          src="https://bacpweblive.blob.core.windows.net/profileimage/8a2ab614-e4a1-4e3f-95dd-6e4e4251e726.jpeg"
-          alt="Phoebe Gorry, MBACP Registered Psychotherapist, Surbiton and London"
-          class="hero-portrait"
-        >
+      <div class="hero-foot" aria-hidden="true">
+        <span class="hero-scroll-label">Scroll</span>
+        <div class="hero-scroll-line"></div>
       </div>
     </section>
 
-    <!-- PULL QUOTE -->
-    <section class="pullquote" aria-label="Philosophy">
-      <div class="pullquote-inner">
-        <blockquote>
-          <p>Therapy isn't just something you talk about. It's something you feel, in your body, in the room, in what shifts between sessions.</p>
-        </blockquote>
-      </div>
-    </section>
-
-    <!-- RECOGNITION: "If you're feeling..." emotional states grid -->
+    <!-- RECOGNITION: "Does this sound familiar?" — paragraph/question form -->
     <section class="recognition" aria-labelledby="rec-heading">
       <div class="section-inner">
-        <p class="eyebrow">If you're feeling</p>
-        <h2 id="rec-heading" class="section-title">You don't have to arrive with a diagnosis</h2>
-        <div class="states-grid">
-          <div class="state-card reveal">
-            <h3>Anxious, wired, or on edge</h3>
-            <p>Your nervous system has been working overtime. Sleep is disrupted, your mind won't settle, and small things feel disproportionately big.</p>
+        <div class="rec-header">
+          <p class="eyebrow">Does this sound familiar</p>
+          <h2 id="rec-heading" class="section-title">You don't need a diagnosis to be here</h2>
+        </div>
+        <div class="rec-questions">
+          <div class="rec-question">
+            <p>Is anxiety something you feel in your body as much as your mind? A chest that tightens, a stomach that won't settle, sleep that won't come?</p>
           </div>
-          <div class="state-card reveal">
-            <h3>Stuck, numb, or disconnected</h3>
-            <p>You're going through the motions but something feels hollow. You're not sure when it started, only that it has, and it's getting harder to ignore.</p>
+          <div class="rec-question">
+            <p>Are you carrying something from the past that you've never fully talked about, and find it keeps surfacing in ways you didn't expect?</p>
           </div>
-          <div class="state-card reveal">
-            <h3>Carrying something old</h3>
-            <p>Things from the past keep surfacing in the present. Patterns. Reactions. A weight that belongs to another time but hasn't stopped following you.</p>
+          <div class="rec-question">
+            <p>Are you a creative person, and has something gone quiet in you? Blocked, burnt out, or just no longer sure what the work is for?</p>
           </div>
-          <div class="state-card reveal">
-            <h3>A creative in crisis</h3>
-            <p>The work that used to sustain you feels blocked or meaningless. The uncertainty of freelance life, the self-doubt, the blurred edges, it's catching up with you.</p>
+          <div class="rec-question">
+            <p>Do you want a therapist who genuinely understands what it means to be queer, without needing to manage their reactions or educate them in the room?</p>
           </div>
-          <div class="state-card reveal">
-            <h3>Queer and wanting to be fully seen</h3>
-            <p>You want a therapist who is genuinely affirming. Someone you don't have to educate, explain yourself to, or protect in the room.</p>
+          <div class="rec-question">
+            <p>Have you been holding yourself together for so long that when things started slipping, it came as a surprise even to you?</p>
           </div>
-          <div class="state-card reveal">
-            <h3>Just not okay right now</h3>
-            <p>You don't need a neat explanation for it. Something isn't right, and you want support finding out what, and what to do about it.</p>
+          <div class="rec-question">
+            <p>Are you ready to understand yourself a little more clearly, and to trust that something different is possible?</p>
           </div>
         </div>
+        <p class="rec-close">If any of this feels familiar, you're in the right place. You don't have to arrive with a tidy explanation.</p>
       </div>
     </section>
 
-    <!-- ABOUT: portrait + bio, then philosophy paragraph -->
+    <!-- ABOUT: text left, portrait right, then values strip -->
     <section class="about" aria-labelledby="about-heading">
       <div class="section-inner">
         <div class="about-grid">
-          <div class="about-portrait-col reveal">
-            <img
-              src="https://bacpweblive.blob.core.windows.net/profileimage/8a2ab614-e4a1-4e3f-95dd-6e4e4251e726.jpeg"
-              alt="Phoebe Gorry, psychotherapist"
-              class="about-portrait"
-            >
-            <div class="cred-strip">
-              <span class="cred-badge">MBACP Registered</span>
-              <span class="cred-badge">MA Counselling &amp; Psychotherapy</span>
-              <span class="cred-badge">University of Roehampton</span>
+          <div class="about-text">
+            <p class="eyebrow">About Phoebe</p>
+            <h2 id="about-heading" class="section-title">Fifteen years on stage before the therapy room</h2>
+            <p>Before training as a psychotherapist, I spent more than fifteen years working as a performer. That time gave me a particular understanding of the body, of presence, and of what it means to keep showing up in front of other people when things feel uncertain inside. It also gave me a direct experience of the specific pressures that come with creative and freelance work.</p>
+            <p>I hold a Master's in Counselling and Psychotherapy from the University of Roehampton and am a Registered Member of the BACP. I trained in somatic trauma therapy with world-renowned specialist Babette Rothschild, and that body-aware, trauma-informed approach underpins everything I do.</p>
+            <p>I work in private practice in Surbiton and London, and as a sessional psychotherapist at Nightingale Hospital. Previous experience includes NHS IAPT settings, the low-cost service Headstrong, and working with young creatives at the Royal Academy of Dramatic Arts.</p>
+            <div class="cred-row">
+              <span class="cred-item">MBACP Registered</span>
+              <span class="cred-item">MA Counselling &amp; Psychotherapy</span>
+              <span class="cred-item">University of Roehampton</span>
             </div>
           </div>
-          <div class="about-text reveal">
-            <p class="eyebrow">About Phoebe</p>
-            <h2 id="about-heading" class="section-title">Trained in the body as well as the mind</h2>
-            <p>Before I became a psychotherapist, I spent over 15 years working as a performer. That time shaped how I understand people: the way a body carries what a mind struggles to articulate, the particular pressures of creative and freelance life, and what it actually takes to keep showing up.</p>
-            <p>I hold a Master's in Counselling and Psychotherapy from the University of Roehampton and am a Registered Member of the BACP. I trained in somatic trauma therapy with world-renowned specialist Babette Rothschild, and that body-aware, trauma-informed way of working runs through everything I do.</p>
-            <p>I work in private practice in Surbiton and London, and as a sessional therapist at Nightingale Hospital. I've previously worked in NHS settings, with the low-cost service Headstrong, and with young creatives at the Royal Academy of Dramatic Arts. I offer an explicitly GSRD-affirmative space for LGBTQIA+ clients and those exploring gender and sexuality.</p>
+          <div class="about-portrait-col">
+            <img
+              src="https://bacpweblive.blob.core.windows.net/profileimage/8a2ab614-e4a1-4e3f-95dd-6e4e4251e726.jpeg"
+              alt="Phoebe Gorry, MBACP Registered Psychotherapist"
+              class="about-photo"
+            >
           </div>
         </div>
 
-        <div class="philosophy-band reveal">
-          <div class="philosophy-inner">
-            <p class="eyebrow">My approach</p>
-            <p class="philosophy-text">I don't follow a single method. I draw from person-centred, psychodynamic, somatic, and creative approaches and adapt to what each person actually needs. The common thread is attention to the whole of you, not just the story your mind is telling. Therapy can be short-term and focused, or longer and more exploratory. We work that out together.</p>
+        <!-- VALUES GRID -->
+        <div class="values-strip">
+          <div class="value-item">
+            <h3>Body-aware</h3>
+            <p>Every session attends to what's happening in the body, not just the mind. Sensation, breath, and nervous system response are all part of the conversation.</p>
+          </div>
+          <div class="value-item">
+            <h3>Non-judgmental</h3>
+            <p>Whatever you bring, I will meet with curiosity rather than judgement. Nothing you say will be labelled, minimised, or used against you.</p>
+          </div>
+          <div class="value-item">
+            <h3>GSRD-affirmative</h3>
+            <p>An explicitly affirming space for LGBTQIA+ clients and those exploring gender, sexuality, and relationship diversity. You will not have to explain yourself.</p>
+          </div>
+          <div class="value-item">
+            <h3>Flexible</h3>
+            <p>Short-term focused work, longer open-ended therapy, or single sessions. We work out together what fits your life, your goals, and your pace.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- APPROACH: Modalities — numbered horizontal strips -->
+    <!-- APPROACH: large-type modality treatments -->
     <section class="approach" aria-labelledby="approach-heading">
       <div class="section-inner">
         <p class="eyebrow">How I work</p>
-        <h2 id="approach-heading" class="section-title">The methods behind the method</h2>
+        <h2 id="approach-heading" class="section-title">Five approaches, one direction</h2>
+        <p class="approach-intro">I draw from several therapeutic traditions and adapt to what each individual actually needs. What unites them is attention to the whole person, not just the presenting problem.</p>
+
         <div class="modality-list">
-          <div class="modality-item reveal">
-            <span class="modality-num">01</span>
-            <div class="modality-body">
-              <h3>Somatic and body-aware</h3>
-              <p>Trauma lives in the nervous system as much as in memory. Drawing on my training with Babette Rothschild, I pay attention to what the body holds alongside what words can reach. This approach is particularly effective for trauma, anxiety, and chronic stress.</p>
+          <div class="modality-item">
+            <div class="modality-head">
+              <span class="modality-num">01</span>
+              <h3 class="modality-name">Somatic &amp; body-aware</h3>
             </div>
+            <p class="modality-desc">Trauma and distress live in the nervous system as much as in memory. Trained by world-renowned somatic trauma specialist Babette Rothschild, I work with what the body holds alongside what words can reach. This is not physical or intrusive, just a more whole-person conversation.</p>
           </div>
-          <div class="modality-item reveal">
-            <span class="modality-num">02</span>
-            <div class="modality-body">
-              <h3>Person-centred at the core</h3>
-              <p>You are the expert on your own experience. My job is to offer a consistently warm, non-judgmental space in which you can begin to hear yourself more clearly, and to trust what you find there.</p>
+          <div class="modality-item">
+            <div class="modality-head">
+              <span class="modality-num">02</span>
+              <h3 class="modality-name">Person-centred</h3>
             </div>
+            <p class="modality-desc">You are the expert on your own experience. My role is to offer consistent warmth and non-judgmental presence, so that you can begin to hear yourself more clearly and trust what you find there. The relationship between therapist and client is itself part of the work.</p>
           </div>
-          <div class="modality-item reveal">
-            <span class="modality-num">03</span>
-            <div class="modality-body">
-              <h3>Psychodynamic depth</h3>
-              <p>Old patterns often have old roots. Where it's useful, we look at how early relationships and experiences continue to shape how you move through the world today, not to assign blame, but to understand.</p>
+          <div class="modality-item">
+            <div class="modality-head">
+              <span class="modality-num">03</span>
+              <h3 class="modality-name">Psychodynamic</h3>
             </div>
+            <p class="modality-desc">Old patterns often have old roots. Where it's useful, we look at how early relationships and experiences continue to shape how you move through the world today. The aim is understanding, not blame, and the insight that comes from it is often where lasting change begins.</p>
           </div>
-          <div class="modality-item reveal">
-            <span class="modality-num">04</span>
-            <div class="modality-body">
-              <h3>Creative and imaginal</h3>
-              <p>I use imagery, metaphor, and embodied awareness to open up what words alone can't always reach. Drawing on my background in performance, I understand how the creative and the psychological are often inseparable. This approach is never obligatory, always led by you.</p>
+          <div class="modality-item">
+            <div class="modality-head">
+              <span class="modality-num">04</span>
+              <h3 class="modality-name">Creative &amp; imaginal</h3>
             </div>
+            <p class="modality-desc">Drawing on my background as a performer, I use imagery, metaphor, and embodied awareness to access what language alone sometimes can't reach. This is never obligatory, always led by what feels useful to you, and particularly effective for clients who think and feel in creative ways.</p>
           </div>
-          <div class="modality-item reveal">
-            <span class="modality-num">05</span>
-            <div class="modality-body">
-              <h3>GSRD-affirmative</h3>
-              <p>I offer a fully affirming space for LGBTQIA+ clients, people exploring gender and sexuality, and those whose identities sit outside mainstream frameworks. You will not have to explain yourself, justify your experience, or manage my reactions.</p>
+          <div class="modality-item">
+            <div class="modality-head">
+              <span class="modality-num">05</span>
+              <h3 class="modality-name">GSRD-affirmative</h3>
             </div>
+            <p class="modality-desc">I offer a fully affirming space for LGBTQIA+ clients, those exploring gender and sexuality, and people whose identities or relationships fall outside mainstream frameworks. I bring knowledge, not just goodwill, and I understand the specific psychological pressures that minority stress and identity can carry.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- WHO I WORK WITH: specialism grid -->
+    <!-- SPECIALISMS: categorised by theme -->
     <section class="specialisms" aria-labelledby="spec-heading">
       <div class="section-inner">
         <p class="eyebrow">Who I work with</p>
-        <h2 id="spec-heading" class="section-title">Presenting issues and areas of experience</h2>
-        <p class="spec-intro">I work with adults of all ages, including millennials, Gen Z, creatives, and freelancers. The list below reflects areas I have specific training or experience in, not a ceiling on who I can support.</p>
-        <ul class="spec-grid" role="list">
-          <li>Trauma &amp; PTSD</li>
-          <li>Anxiety &amp; panic</li>
-          <li>Depression</li>
-          <li>Childhood trauma</li>
-          <li>Abuse (sexual, physical, emotional)</li>
-          <li>Self-harm</li>
-          <li>Suicidal ideation</li>
-          <li>Bereavement &amp; loss</li>
-          <li>Relationship difficulties</li>
-          <li>Identity issues</li>
-          <li>LGBTQIA+ concerns</li>
-          <li>ADHD &amp; neurodiversity</li>
-          <li>Insomnia</li>
-          <li>Creative blocks</li>
-          <li>Burnout</li>
-          <li>Work-related stress</li>
-          <li>Life transitions</li>
-          <li>Low self-esteem</li>
-        </ul>
+        <h2 id="spec-heading" class="section-title">Areas of experience and training</h2>
+        <p class="spec-intro">I work with adults of all ages, with particular experience supporting millennials, Gen Z, creatives, and members of the LGBTQIA+ community. The categories below reflect areas of specific training, not a limit on who I can see.</p>
+        <div class="spec-categories">
+          <div class="spec-cat">
+            <h3>Trauma &amp; distress</h3>
+            <ul>
+              <li>Trauma &amp; PTSD</li>
+              <li>Childhood trauma</li>
+              <li>Abuse (sexual, physical, emotional)</li>
+              <li>Self-harm</li>
+              <li>Suicidal ideation</li>
+              <li>Bereavement &amp; loss</li>
+            </ul>
+          </div>
+          <div class="spec-cat">
+            <h3>Mood &amp; anxiety</h3>
+            <ul>
+              <li>Anxiety &amp; panic attacks</li>
+              <li>Depression</li>
+              <li>Insomnia</li>
+              <li>Burnout</li>
+              <li>Stress</li>
+            </ul>
+          </div>
+          <div class="spec-cat">
+            <h3>Identity &amp; relationships</h3>
+            <ul>
+              <li>LGBTQIA+ concerns</li>
+              <li>Gender &amp; sexuality</li>
+              <li>Identity issues</li>
+              <li>Relationship difficulties</li>
+              <li>Interpersonal patterns</li>
+            </ul>
+          </div>
+          <div class="spec-cat">
+            <h3>Creative life</h3>
+            <ul>
+              <li>Creative blocks</li>
+              <li>Freelance &amp; portfolio career pressures</li>
+              <li>Work-related stress</li>
+              <li>Life transitions</li>
+            </ul>
+          </div>
+          <div class="spec-cat">
+            <h3>Neurodiversity</h3>
+            <ul>
+              <li>ADHD</li>
+              <li>Autism spectrum</li>
+              <li>Neurodiversity generally</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- FEES -->
     <section class="fees" aria-labelledby="fees-heading">
       <div class="section-inner">
-        <div class="consult-banner reveal">
-          <div class="consult-text">
-            <p class="eyebrow" style="color: var(--sienna-pale);">Complimentary</p>
-            <h3>Free 30-minute initial consultation</h3>
-            <p>Before we begin, I offer a free half-hour video call to talk about what's brought you here, how I work, and whether we seem like a good fit. No commitment required.</p>
+        <p class="eyebrow">Sessions &amp; fees</p>
+        <h2 id="fees-heading" class="section-title">Straightforward from the start</h2>
+        <p class="fees-intro">All sessions are 50 minutes. I work in person in Surbiton KT6 and London, and online across the UK. Evening appointments are available on Mondays and Tuesdays.</p>
+
+        <div class="fee-table">
+          <div class="fee-row-item">
+            <div class="fee-label">
+              <h3>Individual therapy</h3>
+              <p>Long-term or short-term. In person or online.</p>
+            </div>
+            <div class="fee-price">£70 <span>/ session</span></div>
           </div>
-          <a href="#contact" class="btn btn-light">Book your free call</a>
+          <div class="fee-row-item">
+            <div class="fee-label">
+              <h3>Single session therapy</h3>
+              <p>One focused session with no ongoing commitment.</p>
+            </div>
+            <div class="fee-price">£70 <span>/ session</span></div>
+          </div>
+          <div class="fee-row-item fee-row-item--soft">
+            <div class="fee-label">
+              <h3>Concessionary rate</h3>
+              <p>A small number of lower-cost spaces for those who need them. Please ask when you get in touch.</p>
+            </div>
+            <div class="fee-price fee-price--ask">Ask me</div>
+          </div>
         </div>
 
-        <h2 id="fees-heading" class="section-title">Session fees</h2>
-        <div class="fee-cards">
-          <div class="fee-card reveal">
-            <h3>Individual therapy</h3>
-            <div class="fee-price">£70</div>
-            <p class="fee-per">per 50-minute session</p>
-            <ul class="fee-list">
-              <li>In person in Surbiton KT6 or London</li>
-              <li>Online, UK-wide</li>
-              <li>Monday to Friday</li>
-              <li>Evening slots Monday &amp; Tuesday</li>
-            </ul>
+        <div class="consult-callout">
+          <div class="consult-callout-text">
+            <h3>Free 30-minute initial consultation</h3>
+            <p>Before any paid session, I offer a free half-hour video call. We'll talk about what's brought you here, how I work, and whether we feel like a good fit. No commitment required.</p>
           </div>
-          <div class="fee-card reveal">
-            <h3>Single session therapy</h3>
-            <div class="fee-price">£70</div>
-            <p class="fee-per">one-off 50-minute session</p>
-            <ul class="fee-list">
-              <li>Focused work on a specific issue</li>
-              <li>No ongoing commitment needed</li>
-              <li>Online or in person</li>
-            </ul>
-          </div>
-          <div class="fee-card fee-card--concession reveal">
-            <h3>Concessionary rate</h3>
-            <div class="fee-price fee-price--ask">Ask me</div>
-            <p class="fee-per">limited spaces available</p>
-            <ul class="fee-list">
-              <li>A small number of lower-cost spaces</li>
-              <li>For those who need them</li>
-              <li>Please enquire when you get in touch</li>
-            </ul>
-          </div>
+          <a href="#contact" class="btn btn-primary">Book your free call</a>
         </div>
-        <p class="fees-note">I offer both short-term focused work and longer open-ended therapy. We will work out together what makes sense for you, and review it as we go.</p>
       </div>
     </section>
 
@@ -281,66 +294,67 @@
     <section class="faq" aria-labelledby="faq-heading">
       <div class="section-inner">
         <p class="eyebrow">Common questions</p>
-        <h2 id="faq-heading" class="section-title">What people often want to know</h2>
-        <div class="faq-list" id="faqList">
+        <h2 id="faq-heading" class="section-title">Things people often want to know</h2>
 
-          <div class="faq-item">
+        <div class="faq-list" id="faqList" role="list">
+
+          <div class="faq-item" role="listitem">
             <button class="faq-q" aria-expanded="false">
               What happens in the first session?
               <span class="faq-icon" aria-hidden="true"></span>
             </button>
             <div class="faq-a" hidden>
-              <p>Before any paid session, we'll have a free 30-minute video call to talk about what's brought you here and see whether working together feels right. If it does, the first full session is a chance to go a little deeper at whatever pace feels comfortable. There's no pressure to cover everything at once, and nothing you say will be judged or rushed.</p>
+              <p>Before any paid session, we have a free 30-minute video call to talk about what's brought you here and see whether working together feels right. If it does, the first full session is a chance to go a little deeper at whatever pace feels comfortable. There's no pressure to cover everything at once.</p>
             </div>
           </div>
 
-          <div class="faq-item">
+          <div class="faq-item" role="listitem">
             <button class="faq-q" aria-expanded="false">
-              How is somatic therapy different from talk therapy?
+              How is somatic therapy different from ordinary talking therapy?
               <span class="faq-icon" aria-hidden="true"></span>
             </button>
             <div class="faq-a" hidden>
-              <p>Talk therapy works primarily through language and reflection. Somatic therapy also pays attention to what's happening in the body: tension, breath, sensation, posture. This matters because trauma, anxiety, and distress are stored in the nervous system, not just in memory. Working somatically means we can reach things that words alone sometimes can't. It doesn't mean anything physical or intrusive, just a more body-aware conversation.</p>
+              <p>Conventional talk therapy works mainly through language and reflection. Somatic therapy also pays attention to what's happening in the body: breath, tension, sensation, posture. This matters because trauma and distress are stored in the nervous system, not only in memory. Working somatically lets us access things that words alone sometimes can't reach. It involves no physical contact, just a more body-aware conversation.</p>
             </div>
           </div>
 
-          <div class="faq-item">
+          <div class="faq-item" role="listitem">
             <button class="faq-q" aria-expanded="false">
-              What does it mean that you're GSRD-affirmative?
+              What does GSRD-affirmative mean in practice?
               <span class="faq-icon" aria-hidden="true"></span>
             </button>
             <div class="faq-a" hidden>
-              <p>GSRD stands for Gender, Sexuality, and Relationship Diversities. Being GSRD-affirmative means I actively support clients who are LGBTQIA+, non-binary, polyamorous, kinky, or whose identity or relationships fall outside mainstream norms. You won't need to explain yourself or justify your experience. I bring knowledge, not just goodwill, and I understand the specific psychological pressures that come with minority stress and identity.</p>
+              <p>GSRD stands for Gender, Sexuality, and Relationship Diversities. Being GSRD-affirmative means I actively support LGBTQIA+ clients and people whose identities or relationships sit outside mainstream norms. In practice: you won't have to explain yourself, justify your experience, or manage my reactions. I bring knowledge and understanding, not just goodwill.</p>
             </div>
           </div>
 
-          <div class="faq-item">
+          <div class="faq-item" role="listitem">
             <button class="faq-q" aria-expanded="false">
-              How long does therapy usually take?
+              How long will I need to come?
               <span class="faq-icon" aria-hidden="true"></span>
             </button>
             <div class="faq-a" hidden>
-              <p>It depends on what you bring. Some people find six to twelve sessions addresses what they came for. Others find that longer, open-ended work is more useful. I offer both, and we'll talk about what seems right in our initial consultation. The important thing is that the length of therapy is always driven by what's useful for you, not by a fixed programme.</p>
+              <p>It depends on what you bring. Some people find that six to twelve sessions addresses what they came for. Others find longer, open-ended work more useful. I offer both, and we'll discuss what feels right in our initial consultation. The length is always driven by what's genuinely useful to you, not by a fixed programme.</p>
             </div>
           </div>
 
-          <div class="faq-item">
+          <div class="faq-item" role="listitem">
             <button class="faq-q" aria-expanded="false">
               Do you offer reduced-fee sessions?
               <span class="faq-icon" aria-hidden="true"></span>
             </button>
             <div class="faq-a" hidden>
-              <p>Yes. I hold a small number of spaces at a lower fee for people who would otherwise be unable to access therapy. These spaces are limited and subject to availability. Please mention it when you get in touch and we can talk about whether it applies to your situation.</p>
+              <p>Yes. I hold a small number of spaces at a lower fee for people who would otherwise be unable to access therapy. These are limited and subject to availability. Please mention this when you get in touch.</p>
             </div>
           </div>
 
-          <div class="faq-item">
+          <div class="faq-item" role="listitem">
             <button class="faq-q" aria-expanded="false">
-              Do you offer online sessions?
+              Can we work together if I'm not based in Surbiton or London?
               <span class="faq-icon" aria-hidden="true"></span>
             </button>
             <div class="faq-a" hidden>
-              <p>Yes. I offer online sessions to clients anywhere in the UK. Online therapy works well for many people, and there's no meaningful difference in quality of care between online and in-person work. If you're unsure which format suits you, we can talk it through in your initial consultation.</p>
+              <p>Yes. I offer online sessions to clients anywhere in the UK. Online therapy works well for most people and there is no meaningful difference in quality of care between online and in-person work. If you're unsure which format suits you, we can talk that through in your free initial call.</p>
             </div>
           </div>
 
@@ -348,26 +362,30 @@
       </div>
     </section>
 
-    <!-- CONTACT -->
+    <!-- CONTACT: light background, two-column -->
     <section class="contact" id="contact" aria-labelledby="contact-heading">
       <div class="section-inner">
         <div class="contact-grid">
           <div class="contact-info">
             <p class="eyebrow">Get in touch</p>
             <h2 id="contact-heading" class="section-title">Let's start with a conversation</h2>
-            <p class="contact-lead">Send a message and I will get back to you within a couple of days to arrange your free 30-minute consultation. Everything is confidential and there is no pressure.</p>
-            <ul class="contact-details">
+            <p class="contact-lead">Send a message and I'll get back to you within a couple of days. We'll arrange your free 30-minute consultation from there. Everything is confidential. There is no pressure.</p>
+            <ul class="contact-meta">
               <li>
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z" fill="currentColor"/></svg>
-                <span>Surbiton, KT6 &amp; London</span>
+                <strong>Location</strong>
+                <span>Surbiton KT6 &amp; London</span>
               </li>
               <li>
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z" fill="currentColor"/></svg>
-                <a href="tel:07795844614">07795 844 614</a>
+                <strong>Telephone</strong>
+                <span><a href="tel:07795844614">07795 844 614</a></span>
               </li>
               <li>
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2"/><path d="M12 7v5l3 3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                <strong>Availability</strong>
                 <span>Mon to Fri, 7am to 6pm. Evenings Mon &amp; Tue</span>
+              </li>
+              <li>
+                <strong>Sessions</strong>
+                <span>In person and online, UK-wide</span>
               </li>
             </ul>
           </div>
@@ -385,7 +403,7 @@
               </div>
             </div>
             <div class="field">
-              <label for="phone">Phone number <span class="label-optional">(optional)</span></label>
+              <label for="phone">Phone number <span class="label-opt">(optional)</span></label>
               <input type="tel" id="phone" name="phone" autocomplete="tel">
             </div>
             <div class="field">
@@ -399,7 +417,7 @@
             </div>
             <div class="field">
               <label for="message">What brings you here?</label>
-              <textarea id="message" name="message" placeholder="There are no wrong answers. Tell me as little or as much as feels right."></textarea>
+              <textarea id="message" name="message" placeholder="Tell me as little or as much as feels right. There are no wrong answers."></textarea>
             </div>
             <button type="submit" class="btn btn-submit">Send message</button>
           </form>

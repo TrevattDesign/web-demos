@@ -1,102 +1,57 @@
 /* ============================================================
    Phoebe Gorry — script.js
-   1. Announce bar dismiss + header offset adjustment
-   2. Header: transparent over hero, solid on scroll
-   3. FAQ accordion
-   4. Scroll reveal (IntersectionObserver)
+   1. Header: transparent over hero, solid on scroll
+   2. FAQ accordion with accessible aria attributes
    ============================================================ */
 
 (function () {
   'use strict';
 
   /* ----------------------------------------------------------
-     1. ANNOUNCE BAR
+     1. HEADER TRANSPARENCY
      ---------------------------------------------------------- */
-  const announceBar  = document.getElementById('announceBar');
-  const announceClose = document.getElementById('announceClose');
-  const header       = document.getElementById('header');
+  var header = document.getElementById('header');
 
-  function dismissAnnounce() {
-    if (!announceBar) return;
-    announceBar.classList.add('hidden');
-    header.classList.add('announce-gone');
-    // Recalculate scroll state immediately
-    checkScroll();
-  }
-
-  if (announceClose) {
-    announceClose.addEventListener('click', dismissAnnounce);
-  }
-
-  /* ----------------------------------------------------------
-     2. HEADER SCROLL BEHAVIOUR
-     ---------------------------------------------------------- */
-  function checkScroll() {
+  function updateHeader() {
     if (!header) return;
-    const heroHeight = document.querySelector('.hero')
-      ? document.querySelector('.hero').offsetHeight
-      : 200;
-    if (window.scrollY > heroHeight * 0.15) {
-      header.classList.add('scrolled');
-    } else {
+    var hero = document.querySelector('.hero');
+    var threshold = hero ? hero.offsetHeight * 0.08 : 80;
+
+    if (window.scrollY < threshold) {
+      header.classList.add('over-hero');
       header.classList.remove('scrolled');
+    } else {
+      header.classList.remove('over-hero');
+      header.classList.add('scrolled');
     }
   }
 
-  window.addEventListener('scroll', checkScroll, { passive: true });
-  checkScroll();
+  window.addEventListener('scroll', updateHeader, { passive: true });
+  updateHeader();
 
   /* ----------------------------------------------------------
-     3. FAQ ACCORDION
+     2. FAQ ACCORDION
      ---------------------------------------------------------- */
-  const faqButtons = document.querySelectorAll('.faq-q');
+  var faqButtons = document.querySelectorAll('.faq-q');
 
   faqButtons.forEach(function (btn) {
     btn.addEventListener('click', function () {
-      const expanded = this.getAttribute('aria-expanded') === 'true';
-      const answer   = this.nextElementSibling;
+      var isExpanded = this.getAttribute('aria-expanded') === 'true';
+      var answer = this.nextElementSibling;
 
-      // Close all others
+      // Collapse all items
       faqButtons.forEach(function (other) {
-        if (other !== btn) {
-          other.setAttribute('aria-expanded', 'false');
-          const otherAnswer = other.nextElementSibling;
-          if (otherAnswer) otherAnswer.hidden = true;
-        }
+        other.setAttribute('aria-expanded', 'false');
+        var otherAnswer = other.nextElementSibling;
+        if (otherAnswer) otherAnswer.hidden = true;
       });
 
-      // Toggle this one
-      this.setAttribute('aria-expanded', String(!expanded));
-      if (answer) answer.hidden = expanded;
+      // If this one was collapsed, expand it
+      if (!isExpanded) {
+        this.setAttribute('aria-expanded', 'true');
+        if (answer) answer.hidden = false;
+      }
     });
   });
-
-  /* ----------------------------------------------------------
-     4. SCROLL REVEAL
-     ---------------------------------------------------------- */
-  const revealEls = document.querySelectorAll('.reveal');
-
-  if ('IntersectionObserver' in window && revealEls.length > 0) {
-    const observer = new IntersectionObserver(
-      function (entries) {
-        entries.forEach(function (entry) {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-            observer.unobserve(entry.target);
-          }
-        });
-      },
-      { threshold: 0.12, rootMargin: '0px 0px -40px 0px' }
-    );
-
-    revealEls.forEach(function (el) {
-      observer.observe(el);
-    });
-  } else {
-    // Fallback: show all immediately
-    revealEls.forEach(function (el) {
-      el.classList.add('visible');
-    });
-  }
 
 })();
