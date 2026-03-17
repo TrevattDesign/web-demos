@@ -238,7 +238,7 @@ h3 { font-size: clamp(1.05rem, 1.6vw, 1.3rem); }
    ============================================================ */
 .hero {
   background: var(--forest);
-  padding: calc(var(--h) + 5rem) 5% 5.5rem;
+  padding: calc(var(--h) + 5rem) 0 5.5rem;
   position: relative;
   overflow: hidden;
 }
